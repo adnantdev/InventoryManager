@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <AssemblyName>InventoryManager</AssemblyName>
+    <RootNamespace>InventoryManager</RootNamespace>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Product>Professional Inventory Manager</Product>
+    <Company>Muhammad Adnan T</Company>
+    <Copyright>© 2026 Muhammad Adnan T. All rights reserved.</Copyright>
+    <Description>Multi-warehouse inventory management system.</Description>
+
+    <ApplicationIcon>app.ico</ApplicationIcon>
+
+    <!-- 👇 Single file, self-contained -->
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+
+    <!-- 👇 Trim to reduce size (test carefully) -->
+    <PublishTrimmed>false</PublishTrimmed>
+
+    <!-- 👇 ReadyToRun = faster startup -->
+    <PublishReadyToRun>true</PublishReadyToRun>
+  </PropertyGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.12" />
+    <PackageReference Include="QRCoder" Version="1.8.0" />
+    <PackageReference Include="System.Drawing.Common" Version="10.0.12" />
+    <PackageReference Include="ZXing.Net.Bindings.Windows.Compatibility" Version="0.16.16" />
+  </ItemGroup>
+
+</Project>
