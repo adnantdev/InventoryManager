@@ -489,3 +489,5 @@ test.txt
 *.db-wal
 *.sqlite
 *.bak
+
+InventoryManager-v1.0.0-win-x64.zip
